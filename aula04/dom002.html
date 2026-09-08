@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div#area {
+            background-color: lightgreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Intereja..
+    </div>
+    <script>
+
+/*ou seja, tudo q estiver aqui, so vai ser acionado quando eu clicar */
+var a = document.getElementById('area')
+a.addEventListener('click', clicar)
+a.addEventListener ('onmouseenter', entrar )
+a.addEventListener('mouseout', sair)
+/* isso vai substituir a div */
+function clicar()  {         
+            a.innerText = 'Clicou!'
+}
+function entrar() {
+            a.innerText = 'Entrou!'
+        
+                a.style.color = 'black'
+        }
+function sair() {
+                a.innerText = 'Saiu!'
+                a.style.color = 'red'
+}
+    </script>
+</body>
+</html>
