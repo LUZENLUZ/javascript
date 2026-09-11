@@ -2,7 +2,8 @@ function carregar () {
     var msg = document.getElementById('msg')
 var img = document.getElementById('imagem')
 var data = new Date()
-var hora = data.getHours()
+var hora = 11
+
 msg.innerHTML = `AGORA SÃO ${hora} HORAS`
 
 
