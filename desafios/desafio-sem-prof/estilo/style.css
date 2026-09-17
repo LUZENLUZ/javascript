@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    --roxo-destaque: #380049;
+    --roxo-medio: #593d64;
+    --fundo: #332936;
+    --roxo-escuro: #2E1D33;
+    --roxo-profundo: #0c000f;
+    --letra: #F5F1F7;
+    --titulos:#ab2ed1;
+}   
+body.claro {
+    --roxo-destaque: #4F7283;
+    --roxo-medio: #B8CDD5;
+    --fundo: #E8F0F3;
+    --roxo-escuro: #AFC6D0;
+    --roxo-profundo: #F3F7F8;
+    --letra: #243038;
+    --titulos: #315D70;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+
+body {
+     background: linear-gradient(
+        135deg,
+        var(--roxo-profundo),
+        var(--fundo)
+    );
+    
+    max-width: 700px;
+    margin: 0 auto;
+     
+    color:var(--letra) ;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+   
+}
+main {
+background-color: var(--roxo-escuro);
+   margin: 15px;
+   border-radius: 10px;
+
+}
+article:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+article {
+    background-color: var(--fundo);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 span {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+header h1 span:hover {
+    color: var(--roxo-destaque);
+    transform: translateY(-5px) scale(1.15);
+    cursor: pointer;
+}
+
+header h1 {
+    
+    text-align: center;
+    padding: 10px;
+    background-color: var(--roxo-medio);
+    border-radius: 5px;
+     margin: 10px;
+     color: var(--titulos);
+     
+}
+section:first-child article {
+    padding: 25px;
+    margin: 20px;
+    background-color: var(--fundo);
+    border-radius: 10px;
+}
+section:first-child h3 {
+    font-size: 1.8rem;
+    color: var(--titulos);
+    padding: 10px 0;
+}
+
+
+nav {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    padding: 7px;
+    background-color: var(--roxo-medio);
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.445);
+
+}
+
+
+nav a {
+     text-decoration: none;
+    color: var(--letra);
+    padding: 8px;
+}
+
+
+nav a:hover {
+    color: var(--roxo-destaque)
+}
+
+.titulo {
+    padding: 15px;
+    color: var(--titulos)
+}
+
+p {
+    padding: 10px;
+    line-height: 1.6;
+     font-size: 1rem;
+}
+#btnTema {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+}
