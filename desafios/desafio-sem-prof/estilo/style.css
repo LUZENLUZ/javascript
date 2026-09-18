@@ -95,16 +95,22 @@ section:first-child h3 {
 }
 
 
-nav {
-    position: relative;
+
+    nav {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+
     text-align: center;
     margin: 20px;
     padding: 7px;
+
     background-color: var(--roxo-medio);
     border-radius: 5px;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.445);
 
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.445);
 }
+
 
 
 nav a {
@@ -137,4 +143,29 @@ p {
     border: none;
     background: transparent;
     font-size: 1.2rem;
+}
+#btnLeiaMais {
+      background: var(--roxo-escuro);
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 8px;
+}
+.imagem {
+     width: 100%;
+    height: auto;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    color: var(--letra);
+    border-top: 1px solid var(--roxo-medio);
+    font-size: 0.85rem;
+   
+}
+.subtitulo {
+    text-align: center;
 }

@@ -8,26 +8,28 @@
 </head>
 
 <body>
-    <header>
+    <header  id="inicio">
         <h1> <span>P</span><span>o</span><span>r</span><span>t</span><span>a</span><span>l</span>
     <span>L</span><span>u</span><span>z</span><span>e</span><span>n</span><span>t</span><span>e</span><span>c</span><span>h</span></h1>
+    </header>
         <nav>   
             
-            <a href="#">| Início |</a>
-        <a href="#">| Notícias |</a>
-        <a href="#">| CyberSegurança |</a>
-
+           <a href="#inicio">| Início |</a>
+        <a href="#noticias">| Notícias |</a>
+        <a href="#cyberseguranca">| Cibersegurança |</a>
 
         <button id="btnTema">☀</button>
         </nav>
-    </header>
+    
     
     
     <main>
-        <section>
+        <section id="noticias">
                 <h2 class="titulo">Principais Notícias</h2>
 
     <article>
+
+        <img class="imagem" src="imagens/programIA.jpg" alt="Desenvolvedores trabalhando com tecnologia de IA">
         <h3>IA está transformando a programação</h3>
 
         
@@ -46,8 +48,9 @@
     segundo a pesquisa de 2025 do Stack Overflow, 84% usam ou planejam usar
     IA no processo de desenvolvimento, mas 46% desconfiam da precisão dos
     resultados gerados.
+  
         </p>
-        <button id="btnLeiaMais">Leia mais</button>
+        <button id="btnLeiaMais">...</button>
 
        </article>
         </section>  
@@ -55,6 +58,7 @@
 
         <article>
                 <h2 class="titulo">Destaque Tec</h2>
+                <img class="imagem" src="imagens/factory.png" alt="logo factory">
                 <h3 class="titulo">O que é a Factory?</h3>
                 <p>A Factory foi fundada em 2023 com a proposta de aumentar a autonomia no desenvolvimento de software. O principal produto são os chamados Droids, agentes de IA voltados para tarefas de desenvolvimento. A empresa diz que eles podem atuar ao longo de várias etapas do ciclo de desenvolvimento, em vez de apenas completar linhas de código.</p> 
                 <p>Em 15 de setembro de 2026, a Factory anunciou uma rodada de US$ 200 milhões, elevando sua avaliação para US$ 5 bilhões. A rodada contou com investidores como Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis e Clearlake. Com essa rodada, o financiamento total da empresa passou de US$ 400 milhões.
@@ -64,7 +68,7 @@
                 Ou seja, nesse intervalo a avaliação reportada passou de:
 
                 US$ 1,5 bi → US$ 5 bi</p>
-                <h4 style="text-align: center;">E quem está usando?</h4>
+                <h4 class="subtitulo">E quem está usando?</h4>
                 <p>A própria Factory afirma que sua plataforma já é usada por centenas de milhares de desenvolvedores e cita empresas como Nvidia, Adobe, Palo Alto Networks, T-Mobile, Blackstone e RBC entre os usuários.
 
 Em abril, a empresa também dizia que seus Droids eram usados diariamente por desenvolvedores de empresas como Nvidia, Adobe, EY, Palo Alto Networks e Adyen.</p>
@@ -72,7 +76,8 @@ Em abril, a empresa também dizia que seus Droids eram usados diariamente por de
         </article>
 
         <article>
-            <h2 class="titulo">FIM DOS PROGRAMADORES?</h2>
+            <h2 id="cyberseguranca" class="titulo">FIM DOS PROGRAMADORES?</h2>
+            <img class="imagem" src="imagens/IACODE.jpg" alt="IA CODANDO">
             <p>O avanço da inteligência artificial trouxe uma dúvida cada vez mais comum: a programação vai deixar de ser necessária?
 
 Apesar da evolução das ferramentas, os dados atuais apontam mais para uma transformação da profissão do que para seu desaparecimento. Em 2025, 84% dos desenvolvedores pesquisados pelo Stack Overflow disseram usar ou planejar usar IA, mas 46% afirmaram não confiar totalmente na precisão das respostas. Além disso, 66% disseram se frustrar com soluções que parecem corretas, mas não são.
@@ -90,7 +95,7 @@ A IA provavelmente fará com que programadores escrevam código de maneira difer
 
     
     
-    <footer>© 2026 Luzentech</footer>
+    <footer>© 2026 Luzentech — Tecnologia, programação e cibersegurança.</footer>
 
     <script src="js/script.js"></script>
 </body>
